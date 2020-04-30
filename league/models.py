@@ -28,8 +28,10 @@ class Profile(models.Model):
         return self.teamname
 
 class Match(models.Model):
+    # 주소 City/Province
+
     HOME = ((1,'D1'),(2,'D2'),(3,'D3'),(4,'D4'),(5,'D5'),(6,'D6'),(6,'D6'),(7,'D7'))
-    # 홈구장
+    # 주소 Ward
     home = models.IntegerField(choices=HOME, default=1,)
     #소개
     MEMBER = ((1,'5 vs 5/ 6 vs 6'),(2,'7 vs 7/ 8 vs 8'),(3,'11 vs 11'))
